@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class MatrixToImageWriter {
-    private static final int BLACK=0xFF000000;
-    private static final  int WHITE=0xFFFFFFFF;
+    private static final int BLACK=0xFF000000;//黑色
+    private static final  int WHITE=0xFFFFFFFF;//白色
     private MatrixToImageWriter(){
 
     }
