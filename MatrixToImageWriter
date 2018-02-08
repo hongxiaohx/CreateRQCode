@@ -27,7 +27,7 @@ public class MatrixToImageWriter {
     public static void writeToFile(BitMatrix matrix, String format, File file,String logoPath)throws IOException{
 
         BufferedImage image=toBufferedImage(matrix);
-        //设置LOGO
+        //设置LOGO图片
         LogoConfig logoConfig = new LogoConfig();
         image = logoConfig.LogoMatrix(image,logoPath);
         if(!ImageIO.write(image,format,file)){
@@ -40,7 +40,7 @@ public class MatrixToImageWriter {
     }
     public static void writeToStream(BitMatrix matrix, String format, OutputStream stream, String logoPath)throws IOException{
         BufferedImage image=toBufferedImage(matrix);
-        //设置LOGO
+        //设置LOGO图片
         LogoConfig logoConfig = new LogoConfig();
         image = logoConfig.LogoMatrix(image,logoPath);
         if(!ImageIO.write(image,format,stream)){
